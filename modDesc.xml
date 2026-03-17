@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="92" version="1.0.0.0">
+    <author>ephesiius</author>
+    <version>1.0.0.0</version>
+
+    <multiplayer supported="true"/>
+
+    <title>
+        <en>Particle Disintegrator</en>
+    </title>
+
+    <description>
+        <en>A hand tool that removes unwanted fill heaps from the terrain. Point and shoot to clean up grass, chaff, and other piles cluttering your farm.</en>
+    </description>
+
+    <iconFilename>icon_particleDisintegrator.dds</iconFilename>
+
+    <extraSourceFiles>
+        <sourceFile filename="register.lua" />
+    </extraSourceFiles>
+
+    <storeItems>
+        <storeItem xmlFilename="ParticleDisintegrator.xml" />
+    </storeItems>
+</modDesc>

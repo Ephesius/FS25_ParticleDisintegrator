@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<sounds xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/handtool_sounds.xsd">
+    <particleDisintegrator>
+        <sounds>
+            <disintegrate file="particleDisintegrator.wav" volumeScale="5.0"/>
+        </sounds>
+    </particleDisintegrator>
+</sounds>

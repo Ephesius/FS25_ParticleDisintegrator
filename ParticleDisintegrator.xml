@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<handTool type="particleDisintegrator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/handTool.xsd">
+    <annotation>Particle Disintegrator - removes unwanted fill heaps from the terrain.</annotation>
+
+    <storeData>
+        <name>Particle Disintegrator</name>
+        <functions>
+            <function>Remove fill heaps</function>
+        </functions>
+        <image>store_particleDisintegrator.dds</image>
+        <price>5000</price>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <canBeSold>true</canBeSold>
+        <showInStore>true</showInStore>
+        <category>handtoolsMisc</category>
+        <species>HANDTOOL</species>
+    </storeData>
+
+    <base canCrouch="true" runMultiplier="1" walkMultiplier="1" canBeSaved="true" canBeDropped="true">
+        <typeDesc>Particle Disintegrator</typeDesc>
+        <actions activate="Disintegrate %s"/>
+        <filename>particleDisintegrator.i3d</filename>
+        <sounds filename="ParticleDisintegratorSound.xml"/>
+        <graphics node="graphics" lockFirstPerson="true"/>
+        <handNode node="handNode"/>
+        <firstPersonNode node="firstPersonNode"/>
+    </base>
+
+    <particleDisintegrator
+        raycastNode="raycast"
+        raycastDistance="5"
+        radius="0.5"
+        litersPerSecond="500"
+        pricePerMinute="0"
+        laserBeamNode="laserBeam"
+    />
+    <!-- To restrict to specific fill types, add e.g.: fillTypes="GRASS_WINDROW DRYGRASS_WINDROW" -->
+
+    <i3dMappings>
+        <i3dMapping id="particleDisintegratorRoot" node="0>" />
+        <i3dMapping id="graphics" node="0>0" />
+        <i3dMapping id="handNode" node="0>1" />
+        <i3dMapping id="leftHandRef" node="0>2" />
+        <i3dMapping id="holderNode" node="0>3" />
+        <i3dMapping id="raycast" node="0>4" />
+        <i3dMapping id="firstPersonNode" node="0>5" />
+        <i3dMapping id="laserBeam" node="0>6" />
+    </i3dMappings>
+</handTool>

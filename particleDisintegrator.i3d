@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="particleDisintegrator.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.11"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/maps/mapAS/textures/trafficLightsGlow_emissive.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="mat_particleDisintegrator" materialId="5" diffuseColor="0.8 0.784314 0.0745098 1" specularColor="0.368627 1 1">
+    </Material>
+    <Material name="UnnamedMaterial" materialId="22" diffuseColor="1 0 0 1">
+      <Emissivemap fileId="4"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="particleDisintegrator.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="particleDisintegrator" nodeId="8">
+      <TransformGroup name="graphics" nodeId="9">
+        <Shape name="particleDisintegrator" rotation="0 180 0" shapeId="1" nodeId="10" castsShadows="true" receiveShadows="true" materialIds="5"/>
+      </TransformGroup>
+      <TransformGroup name="handNode" translation="0 -0.0741295 0" rotation="0 180 -90" nodeId="11"/>
+      <TransformGroup name="leftHandRef" translation="0 -0.0725885 0" nodeId="12"/>
+      <TransformGroup name="holderNode" nodeId="13"/>
+      <TransformGroup name="raycast" translation="0 5.63654e-08 0.187345" rotation="-180 180 -180" nodeId="14"/>
+      <TransformGroup name="firstPersonNode" translation="0.25 0.25 -0.5" rotation="-180 180 -180" nodeId="15"/>
+      <Shape name="laserBeam" translation="0 0 1.44" scale="0.005 0.005 2.5" shapeId="2" visibility="false" nodeId="18" castsShadows="false" receiveShadows="false" distanceBlending="false" materialIds="22"/>
+    </TransformGroup>
+  </Scene>
+
+</i3D>
