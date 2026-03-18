@@ -6,15 +6,13 @@
   </Asset>
 
   <Files>
-    <File fileId="4" filename="$data/maps/mapAS/textures/trafficLightsGlow_emissive.dds"/>
   </Files>
 
 
   <Materials>
     <Material name="mat_particleDisintegrator" materialId="5" diffuseColor="0.8 0.784314 0.0745098 1" specularColor="0.368627 1 1">
     </Material>
-    <Material name="UnnamedMaterial" materialId="6" diffuseColor="1 0 0 1">
-      <Emissivemap fileId="4"/>
+    <Material name="UnnamedMaterial" materialId="25" diffuseColor="1 0 0 1">
     </Material>
   </Materials>
 
@@ -32,7 +30,7 @@
       <TransformGroup name="holderNode" nodeId="15"/>
       <TransformGroup name="raycast" translation="0 5.63654e-08 0.187345" rotation="-180 180 -180" nodeId="16"/>
       <TransformGroup name="firstPersonNode" translation="0.25 0.25 -0.5" rotation="-180 180 -180" nodeId="17"/>
-      <Shape name="laserBeam" translation="0 0 1.44" scale="0.005 0.005 2.5" shapeId="2" visibility="false" clipDistance="50" nodeId="18" castsShadows="false" receiveShadows="false" distanceBlending="false" materialIds="6"/>
+      <Shape name="laserBeam" translation="0 0 1.44" scale="0.005 0.005 2.5" shapeId="2" visibility="false" clipDistance="50" nodeId="18" castsShadows="false" receiveShadows="false" distanceBlending="false" materialIds="25"/>
     </TransformGroup>
   </Scene>
 
