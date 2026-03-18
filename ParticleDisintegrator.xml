@@ -19,7 +19,7 @@
 
     <base canCrouch="true" runMultiplier="1" walkMultiplier="1" canBeSaved="true" canBeDropped="true">
         <typeDesc>Particle Disintegrator</typeDesc>
-        <actions activate="Disintegrate %s"/>
+        <actions activate="Disintegrate"/>
         <filename>particleDisintegrator.i3d</filename>
         <sounds filename="ParticleDisintegratorSound.xml"/>
         <graphics node="graphics" lockFirstPerson="true"/>
